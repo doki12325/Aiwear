@@ -1,3 +1,58 @@
 .home-container-main {
   color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.home-container {
+  height: 80vh;
+  width: 90%;
+  border-radius: 30px;
+}
+
+.home-carousel-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+#home-carousel-image {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  mask-image: linear-gradient(rgba(0, 0, 0, 1) 0%, transparent 75%);
+  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 0%, transparent 100%);
+  transition: 200ms linear;
+}
+
+.carousel-text {
+  color: var(--text-color);
+  font-size: 5rem;
+  margin: 3rem;
+}
+.by {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  width: 25%;
+  border: 1px solid;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  transition: 200ms linear;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.by:hover {
+  background-color: var(--text-color);
+  color: black;
 }
