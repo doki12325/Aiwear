@@ -3,14 +3,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 0.5rem;
   justify-content: center;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 .base-container {
   position: relative;
+  z-index: 0;
   display: flex;
   color: white;
   align-items: center;
@@ -23,6 +25,17 @@
   border-radius: 1rem;
   transition: 200ms linear;
   /* overflow: hidden; */
+}
+
+.type {
+  z-index: 5;
+}
+.material {
+  z-index: 4;
+}
+
+.prompt {
+  z-index: 3;
 }
 
 .section-heading {
@@ -47,10 +60,78 @@
   height: 40vh;
   left: 0;
   top: 100%;
-  z-index: 1;
+  z-index: 2;
 
-  transition: 200ms linear;
+  transition: opacity 200ms linear;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+}
+
+.hidden-card {
+  position: relative;
+  box-shadow: 2px 2px 40px black;
+  padding: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 10px 10px 0 0;
+  outline: 4px solid transparent;
+}
+
+.active {
+  box-shadow: 0 0 0;
+  outline: 4px solid green;
+}
+
+.card-image {
+  height: 13rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3rem;
+  width: 100%;
+  background-color: grey;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prompt-input {
+  height: 3rem;
+  width: 30rem;
+  border: 0;
+}
+
+.prompt-input:focus {
+  outline: 0;
+  border: 0;
+}
+
+.prompt-div {
+  flex-direction: column;
+}
+
+.prompt-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: grey;
+  height: 3rem;
+  width: 6rem;
+  border-radius: 10px;
+  text-decoration: none;
+}
+p {
+  font-size: 1.1rem;
+  text-decoration: none;
 }
