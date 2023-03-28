@@ -8,13 +8,18 @@
 
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-
-  gap: 2rem;
+  justify-content: space-evenly;
 }
+
 .main-logo {
+  transform: translate(-50%);
   height: 5rem;
-  margin-left: 0.8rem;
+}
+
+.nav-button-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: -1rem;
 }
 
 .nav-button {

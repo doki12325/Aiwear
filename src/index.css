@@ -6,9 +6,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  --main-background: black;
-  --light-background: grey;
-  --text-color: white;
+  --main-background: white;
+  --light-background: white;
+  --text-color: black;
   --pop-color: red;
 }
 
