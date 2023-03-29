@@ -1,1 +1,2 @@
-# Run npm i
+# 1. Run npm i
+# 2. run npm run dev
