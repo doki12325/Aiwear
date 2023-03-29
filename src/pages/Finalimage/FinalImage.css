@@ -1,9 +1,15 @@
+.image-container {
+  position: relative;
+  height: 55vh;
+  width: 60vw;
+}
+
 .design-img {
   position: absolute;
   z-index: 3;
   max-height: 18vh;
-  top: 38vh;
-  left: 45vw;
+  top: 38%;
+  left: 40%;
   border-radius: 5%;
   transform: scaleX(1.1);
   /* filter: invert(); */
@@ -13,9 +19,48 @@
 .tshirt {
   position: absolute;
   z-index: 2;
-  top: 20vh;
-  left: 49vw;
+  top: 20%;
+  left: 48%;
   transform: translate(-50%);
   height: 55vh;
   /* filter: invert(); */
+}
+
+.final-tshirt {
+  height: 55vh;
+}
+
+.final-container {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.final-infosection {
+  height: 55vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.retry-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 20rem;
+  border: 1px solid;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  transition: 200ms linear;
+  font-weight: 600;
+  cursor: pointer;
+  color: black;
+}
+
+.retry-button:hover {
+  background-color: var(--text-color);
+  color: white;
 }

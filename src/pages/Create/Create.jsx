@@ -12,7 +12,8 @@ import { Link } from "react-router-dom";
 export default function Create(props) {
   const [Outtype, setOutType] = useState();
   const [Outmaterial, setOutMaterial] = useState();
-  const [Outprompt, setOutPrompt] = useState();
+  const [Outprompt, setOutPrompt] = useState("");
+  const [Outpromptcolor, setOutPromptcolor] = useState("");
   const [type, setType] = useState(false);
   const [material, setMaterial] = useState(false);
   const [prompt, setPrompt] = useState(false);
@@ -26,7 +27,7 @@ export default function Create(props) {
 
   const generateDesign = async () => {
     const response = await openai.createImage({
-      prompt: Outprompt + ` plain blue design`,
+      prompt: Outprompt + ` plain ${Outpromptcolor} design`,
       n: 1,
       size: "1024x1024",
     });
@@ -174,6 +175,14 @@ export default function Create(props) {
               placeholder={"What's on your mind today?"}
               className={"prompt-input"}
             ></input>
+            <input
+              value={Outpromptcolor}
+              onChange={(e) => setOutPromptcolor(e.currentTarget.value)}
+              type={"text"}
+              placeholder={"Enter Base Color"}
+              className={"prompt-input color"}
+            ></input>
+
             <Link className="link" to={"/finalimage"}>
               <div onClick={() => generateDesign()} className="prompt-button">
                 <p>Generate!</p>

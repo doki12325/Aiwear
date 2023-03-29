@@ -32,12 +32,12 @@
 
 .nav-button::after {
   content: "";
-  background-color: var(--pop-color);
-  height: 3px;
+  background-color: black;
+  height: 2px;
   width: 0%;
   position: absolute;
   left: 10%;
-  bottom: 0;
+  bottom: -2px;
   transition: width 150ms linear;
 }
 

@@ -34,6 +34,7 @@
 }
 
 .home-carousel-image {
+  filter: invert();
   transition: 200ms linear;
 }
 

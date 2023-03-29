@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { BsFillCartFill } from "react-icons/bs";
+import { BsFillCartFill, BsFillPersonFill } from "react-icons/bs";
 
 import "./NavBar.css";
 
@@ -11,7 +11,7 @@ export default function NavBar() {
   return (
     <div className="main-container">
       <div className="nav-button-container">
-        <Link className="link" to={"/"}>
+        <Link to={"/"}>
           <button className="nav-button">Home</button>
         </Link>
         <Link className="link" to={"/about"}>
@@ -22,7 +22,10 @@ export default function NavBar() {
         </Link>
       </div>
       <img src={mainlogo} className="main-logo" />
-      <BsFillCartFill style={{ transform: "scale(1.5)" }} />
+      <div className="nav-button-container" style={{ gap: "4rem" }}>
+        <BsFillCartFill style={{ transform: "scale(1.5)" }} />
+        <BsFillPersonFill style={{ transform: "scale(1.65)" }} />
+      </div>
     </div>
   );
 }

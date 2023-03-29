@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import { BiArrowBack } from "react-icons/bi";
 
-import react from "../../assets/1.jpg";
+import react from "../../assets/3.jpg";
 
 import "./HomePage.css";
 

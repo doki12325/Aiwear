@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: 1rem;
-  background-color: grey;
+  background-color: #610f7f;
   height: 1.6rem;
   padding: 2rem;
   width: 60%;
@@ -53,7 +53,7 @@
 
 .hidden {
   margin: 0;
-  background-color: wheat;
+  background-color: #ffa400;
   padding: 2rem;
   position: absolute;
   width: 60vw;
@@ -98,7 +98,7 @@
   left: 0;
   height: 3rem;
   width: 100%;
-  background-color: grey;
+  background-color: #610f7f;
   margin: 0;
   display: flex;
   align-items: center;
@@ -125,13 +125,14 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: grey;
+  background-color: #9c528b;
   height: 3rem;
   width: 6rem;
   border-radius: 10px;
   text-decoration: none;
 }
-p {
+.prompt-button > p {
+  color: white;
   font-size: 1.1rem;
   text-decoration: none;
 }
